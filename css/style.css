@@ -1,5 +1,6 @@
 /* ****************************************** */
 /* Header */
+/* ****************************************** */
 .header {
   display: flex;
   justify-content: space-between;
@@ -52,6 +53,8 @@
 }
 /* ****************************************** */
 /* ----Hero Section */
+/* ****************************************** */
+
 /* Hero Text */
 .section--hero {
   background-color: #fdf2e9;
@@ -114,6 +117,7 @@
 
 /* ****************************************** */
 /* Featured in Section */
+/* ****************************************** */
 
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
@@ -141,6 +145,7 @@
 }
 /* ****************************************** */
 /* How it works section */
+/* ****************************************** */
 
 .section-how {
   padding: 9.6rem 0;
@@ -203,6 +208,8 @@
 
 /* ****************************************** */
 /* Meals Section */
+/* ****************************************** */
+
 .section-meals {
   padding: 9.6rem 0;
 }
@@ -276,6 +283,7 @@
 }
 
 .list {
+  margin-bottom: 4rem;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -298,4 +306,322 @@
 .all-recipes {
   text-align: center;
   font-size: 1.8rem;
+}
+
+/* ****************************************** */
+/* Testimonial Section */
+/* ****************************************** */
+
+.section-testimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonial-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6px;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+
+  padding: 1.6rem;
+  min-width: 50rem;
+  /* padding-top: 10rem; */
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-img {
+  display: block;
+  width: 100%;
+
+  transition: all 0.4s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.1);
+}
+
+/* ****************************************** */
+/* Pricing Section */
+/* ****************************************** */
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.list-pricing li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.pricing-plan--complete {
+  position: relative;
+  background-color: #fdf2e9;
+
+  overflow: hidden;
+}
+.pricing-plan--complete::after {
+  content: "Best Value";
+  position: absolute;
+  top: 6%;
+  right: -10%;
+
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.8rem 3.2rem;
+  transform: rotate(45deg);
+  color: #333;
+
+  border-radius: 5px;
+  background-color: #ffd43b;
+}
+.pricing-plan {
+  padding: 4.8rem;
+  border-radius: 11px;
+  width: 75%;
+}
+.starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+.plan-price span {
+  font-size: 3.2rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  list-style-type: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+  margin-bottom: 4.8rem;
+}
+.feature-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+  margin-bottom: 3.2rem;
+  padding: 1.2rem;
+  border-radius: 100px;
+  background-color: #fdf2e9;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* ****************************************** */
+/* CTA Section */
+/* ****************************************** */
+.section-cta {
+  padding: 9.6rem 0 12.8rem;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+
+  background-image: linear-gradient(90deg, #eb984e, #e67e22);
+
+  margin-bottom: 2.4rem;
+
+  overflow: hidden;
+}
+.cta-text-box {
+  color: #2e1907;
+  padding: 6.4rem;
+}
+.cta .heading-secondary {
+  color: #2e1907;
+  margin-bottom: 3.2rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+.cta-img-box {
+  background-image:
+    linear-gradient(90deg, rgba(235, 151, 78, 0.2), rgba(230, 125, 34, 0.2)),
+    url(../img/eating.jpg);
+  background-size: cover;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.cta input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus-visible {
+  /* outline: 4px solid #cf711f;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/* ****************************************** */
+/* Footer */
+/* ****************************************** */
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  line-height: 1.2;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  /* line-height: 1.2; */
+  text-decoration: underline;
+  color: #555;
+}
+
+.x {
+  margin-bottom: 2rem;
+}
+
+.socials-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.contacts {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-style: normal;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr repeat(3, 1fr);
 }
